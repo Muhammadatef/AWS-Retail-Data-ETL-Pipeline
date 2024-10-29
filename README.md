@@ -1,14 +1,8 @@
 # Data Pipeline for Sales Analysis using AWS Services
 
-*Project Overview*
+## Project Overview
 
 This project implements a complete data pipeline for a retail company, showcasing the entire Data Engineering Lifecycle. The pipeline extracts data from a MySQL database hosted on Amazon RDS, transforms it for better analytics, and loads it into Amazon S3 for storage. Finally, Amazon Athena allows querying the processed data and creating visualizations with Jupyter Lab. Terraform is used to manage and provision the infrastructure as code (IaC).
-
-*Introduction*
-
-The retailer stores historical sales and customer data in a relational database. The goal is to create a data pipeline that simplifies data access and improves performance for analytics. This project uses the classic MySQL sample database and transforms it into a star schema format to support efficient querying.
-
-This project demonstrates a complete data pipeline using AWS services and showcases all stages of the data engineering lifecycle. The pipeline extracts data from a relational database in Amazon RDS (MySQL), processes it with AWS Glue, and stores the transformed data in Amazon S3. It then leverages Amazon Athena to query and analyze the data, visualizing the results in Jupyter Lab. All the infrastructure components are managed and deployed using Terraform as Infrastructure as Code (IaC).
 
 ## Project Overview
 
@@ -71,7 +65,7 @@ The pipeline consists of three main components:
 
     The Glue job performs data extraction, transformation to star schema, and loads the data into S3.
 
-4. *Querying with Amazon Athena:* Athena allows querying the transformed data stored in S3, providing analysts easy access for analysis.
+4. *Querying with Amazon Athena:* Athena allows querying the transformed data stored in S3, providing analysts easy access for analysis using Jupyter Notebook.
 
 *Technologies Used*
 
@@ -80,6 +74,7 @@ The pipeline consists of three main components:
 * Amazon S3: Stores the transformed data in Parquet format.
 * Amazon Athena: Allows querying the transformed data using SQL.
 * Terraform: Manages and deploys the infrastructure as code.
+* Jupyter Notebook : connecting it using Amazon Athena to do the serving layer and dashboard.
 
 *Prerequisites*
 
